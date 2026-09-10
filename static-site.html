@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-page-node-id="f9KOQb8mkHwFSsCIsemoM9">
+<head data-page-node-id="ahkEgiLiocFyiZDi7RBmBQ">
+  <meta charset="UTF-8" data-page-node-id="mYLi4rqCWpWAilE1lUAfVC" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" data-page-node-id="JYyHsCaiHAD0Mqp5BnF8Sb" />
+  <title>用 GitHub Pages 搭一个极简博客</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    :root { --text: #1a1a1a; --muted: #888; --accent: #4f6ef2; --border: #eee; }
+    body {
+      font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+      color: var(--text); background: #fdfdfd; line-height: 1.8;
+    }
+    .container { max-width: 640px; margin: 0 auto; padding: 40px 24px 80px; }
+    .top { margin-bottom: 32px; }
+    .top a { color: var(--accent); text-decoration: none; font-size: .9rem; }
+    .top a:hover { text-decoration: underline; }
+    h1 { font-size: 1.7rem; margin: 10px 0 6px; line-height: 1.4; }
+    .meta { color: var(--muted); font-size: .85rem; }
+    hr { border: none; border-top: 1px solid var(--border); margin: 24px 0 32px; }
+    .content p { margin-bottom: 18px; }
+    .content h2 { font-size: 1.2rem; margin: 30px 0 12px; }
+    .content ol { margin: 0 0 18px 20px; }
+    .content li { margin-bottom: 10px; }
+    code {
+      background: #f4f4f6; padding: 2px 6px; border-radius: 4px;
+      font-family: ui-monospace, Consolas, monospace; font-size: .9em;
+    }
+    footer { margin-top: 60px; color: var(--muted); font-size: .85rem; text-align: center; }
+  </style>
+</head>
+<body data-page-node-id="GEDg6K85GjYhZJMKecJmvG">
+  <div class="container" data-page-node-id="05BQRjFCiDuTAJHSyMXqiE">
+    <div class="top" data-page-node-id="iNX5EyYHCTVBdHSaYdOBT3">
+      <a href="../index.html" data-page-node-id="ayZfOp7MnPrAIHukzqpiKS">← 返回首页</a>
+      <h1 data-page-node-id="EBzymv7KgWJ5fN3NOkbLMa">用 GitHub Pages 搭一个极简博客</h1>
+      <p class="meta" data-page-node-id="e1MDvtJaLl5HwKZJyviAx0">2026-09-09</p>
+    </div>
+
+    <hr  data-page-node-id="Kj0BcPVn1xzz1uz0yWawHs"/>
+
+    <article class="content" data-page-node-id="pcOh0dDAKniLRbr1JpstLM">
+      <p data-page-node-id="22rdRwdJ0jzDq4pr3PZMxv">很多人想写博客，卡在了第一步：搭站。一上来就被 Hexo、Hugo、Jekyll、Node 版本、主题配置劝退，还没写一个字就先折腾了两天环境。</p>
+      <p data-page-node-id="CiHWJVtcb4cHRcxi68o4WL">其实如果你只是想安静地写东西，一个 HTML 文件就够了。下面是完整的流程。</p>
+
+      <h2 data-page-node-id="NhdaLTpCEXqWtJ4YT9CHM1">1. 建仓库</h2>
+      <p data-page-node-id="FtindYhwkGnxMwM1UArKY4">在 GitHub 新建一个仓库，名字随意，比如 <code data-page-node-id="YI9RJJWDRMAz19YcG3qTv4">my-blog</code>。勾选 Public，其他都不用管。</p>
+
+      <h2 data-page-node-id="C6xte2W0YUyp0Nc02S7Xma">2. 上传文件</h2>
+      <p data-page-node-id="mWJ4u1LDUlP8TfvUiZRCli">把 <code data-page-node-id="79DEQ5s5aHFoDKWdFrL6fo">index.html</code> 传到仓库根目录。文件名必须是 <code data-page-node-id="pGbctA2K3EtBd0IWYA26S0">index.html</code>，这是浏览器默认访问的首页。文章多了之后可以建一个 <code data-page-node-id="76bwNyys35JposgS6dJw90">posts/</code> 目录放详情页，就像这个博客一样。</p>
+
+      <h2 data-page-node-id="TGQcK7K6EgFpZT7kV1ezKe">3. 开启 Pages</h2>
+      <p data-page-node-id="iIeEFiUyE7jgV5PaDuNgUZ">进入仓库的 <strong data-page-node-id="hPQwv2xTmpl0gyVBsoVaux">Settings → Pages</strong>，Source 选择 <code data-page-node-id="wHzZXEJTDKuNENycFvBspk">Deploy from a branch</code>，分支选 <code data-page-node-id="oSaI98zvR7qmHcY8UFw2ZL">main</code>，目录选 <code data-page-node-id="a6TT1tKCjCZeqKE7h9F1CT">/ (root)</code>，点保存。</p>
+      <p data-page-node-id="Bs5vVTGYSWRyj5XNtkZwH5">等一到两分钟，访问 <code data-page-node-id="yXbKKhquXa0X2nIlDiMyT8">https://用户名.github.io/my-blog/</code> 就能看到你的博客了。</p>
+
+      <h2 data-page-node-id="5xm8G19ON7tbLbqY2JG76m">4. 更新内容</h2>
+      <p data-page-node-id="IW3WeqEzxqyWp6n9Fllxfb">以后每次改动，只要把新的 HTML 推上去，GitHub 会自动重新部署。不需要任何构建步骤，也不会出现本地跑得好好的线上却挂了的情况。</p>
+
+      <h2 data-page-node-id="msqruhz8rwXOwlCTmP0m2Q">一点提醒</h2>
+      <p data-page-node-id="kHWboKw49S6gOiDKWRzgc8">仓库必须设为 Public，否则免费账号无法使用 Pages。另外别在页面里放任何密钥，GitHub Pages 上的所有内容都是公开的。</p>
+
+      <p data-page-node-id="vC8cfExEgXBvzkBQ3xm7X7">就这样。整个过程不到五分钟，剩下的时间，可以拿来认真写点东西了。</p>
+    </article>
+
+    <footer data-page-node-id="4DQCoTadOeoU0AQu98lcyU">© 2026 我的博客 · Powered by GitHub Pages</footer>
+  </div>
+</body>
+</html>
